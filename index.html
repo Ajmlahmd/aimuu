@@ -5,20 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You're the Best</title>
+    
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Link to Google Fonts for Josefin Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #ffccff; /* Light pink background */
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            height: 100vh; /* Full height to center vertically */
             margin: 0;
+            background-color: #ffccff; /* Light pink background */
+            font-family: 'Josefin Sans', sans-serif; /* Custom font */
+            padding: 0 20px; /* Add padding for mobile */
         }
+
         h1 {
             color: #ff1493; /* Deep pink text color */
-            font-size: 3em;
+            font-size: 8vw; /* Responsive font size */
+            text-align: center; /* Center text for better mobile appearance */
             text-shadow: 2px 2px 4px #ff69b4; /* Pink shadow for text */
+            margin: 0;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3em; /* Larger font size for tablets and desktops */
+            }
         }
     </style>
 </head>
